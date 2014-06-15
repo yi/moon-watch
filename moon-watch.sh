@@ -1,13 +1,20 @@
 #!/bin/sh
 
-
-TARGET_DIR=$2
-if [ -z "$TARGET_DIR" ]; then TARGET_DIR="`dirname "$0"`"; fi
-TARGET_DIR=$(cd "$TARGET_DIR" && pwd)
+if [ -z "$1" ]
+then
+  echo "Moon-Watch v 0.1"
+  echo "better -watch for moonscript(moonc)"
+  echo "Usage: moon-watch path/to/moonscript [path/to/output/lua]"
+  exit 0
+fi
 
 SRC_DIR=$1
-if [ -z "$SRC_DIR" ]; then SRC_DIR="`dirname "$0"`"; fi
+#if [ -z "$SRC_DIR" ]; then SRC_DIR="`dirname "$0"`"; fi
 SRC_DIR=$(cd "$SRC_DIR" && pwd)
+
+TARGET_DIR=$2
+if [ -z "$TARGET_DIR" ]; then TARGET_DIR="`dirname "$1"`"; fi
+TARGET_DIR=$(cd "$TARGET_DIR" && pwd)
 
 echo "moon-watch start: $SRC_DIR ==> $TARGET_DIR"
 
