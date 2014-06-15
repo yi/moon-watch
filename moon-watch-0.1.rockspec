@@ -1,9 +1,9 @@
 package = "moon-watch"
-version = "0.1"
+version = "0.1.0"
 
 source = {
-  url = "https://github.com/yi/moon-watch.git"
-  branch = "v0.1"
+  url = "https://github.com/yi/moon-watch.git",
+  branch = "master"
 }
 
 
