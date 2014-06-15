@@ -7,3 +7,5 @@ class Person extends Thing
 with Person!
   .name = "MoonScript"
   \say_name!
+
+
