@@ -25,7 +25,6 @@ do
     DEST="`dirname $TARGET_DIR$PART`"
     RESULT_FILENAME=$(echo "`basename $i`" | sed "s/\.moon/\.lua/g")
     cd "`dirname $i`"
-    echo "dest: $DEST"
     moonc -t $DEST "`basename $i`" && echo "=> $DEST/$RESULT_FILENAME (`date`)"
     if [ $? != 0 ]; then tput bel; fi  # beep when compile failed
   fi
