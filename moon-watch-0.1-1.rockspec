@@ -2,7 +2,7 @@ package = "moon-watch"
 version = "0.1-1"
 
 source = {
-  url = "https://github.com/yi/moon-watch.git",
+  url = "git://github.com/yi/moon-watch",
   branch = "master"
 }
 
@@ -25,6 +25,9 @@ dependencies = {
 
 build = {
   type = "builtin",
+  modules = {
+    ["placeholder"] = "placeholder.lua"
+  },
   install = {
     bin = { "moon-watch" }
   }
