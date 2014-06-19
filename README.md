@@ -6,6 +6,11 @@ better -watch for moonscript(moonc) for MacOS
  * Maintains source folder structure in output folder
  * Bell on compile failure
 
+## Install
+
+ 1. Please install [moonrocks](https://rocks.moonscript.org/) first
+ 2. `moonrocks install moon-watch`
+
 ## Usage
 
 ```
