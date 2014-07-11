@@ -2,15 +2,11 @@
 
 if [ -z "$1" ]
 then
-  echo "Moon-Watch v 0.1"
+  echo "Moon-Watch v 0.2"
   echo "better -watch for moonscript(moonc)"
   echo "Usage: moon-watch path/to/moonscript [path/to/output/lua]"
   exit 0
 fi
-
-
-
-
 
 SRC_DIR=$1
 #if [ -z "$SRC_DIR" ]; then SRC_DIR="`dirname "$0"`"; fi
